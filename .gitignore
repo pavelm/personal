@@ -1,4 +1,7 @@
-*bin/*
-*obj/*
+*bin/
+*obj/
+*_ReSharper.*
 *.suo
-*_Resharper*
+*.dat
+*.crc
+*.swp
