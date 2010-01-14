@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>9ea55bba-95d6-4fb9-84b2-2916299cfb36</ProjectGuid>
+    <ProjectGuid>{4792c543-e564-4b4f-ad7a-9bd67164a212}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>StockQuotesLib</RootNamespace>
     <AssemblyName>StockQuotesLib</AssemblyName>
@@ -37,8 +37,12 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.fs" />
+    <Compile Include="StockQuote.fs" />
+    <Compile Include="IQuoteProvider.fs" />
     <None Include="Script.fsx" />
+    <Compile Include="YahooQuoteProvider.fs" />
+    <Compile Include="common.fs" />
+    <Compile Include="html.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
